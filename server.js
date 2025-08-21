@@ -7,4 +7,4 @@ import https from "https";
 https.createServer((q, s) => {
     s.writeHead(200, { "Content-Type": "text/html" });
     s.end(ambilFile("./frontEnd/beranda.html"));
-})
+}).listen(80);
