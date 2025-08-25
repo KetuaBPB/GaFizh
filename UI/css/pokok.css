@@ -1,0 +1,295 @@
+:root {
+  --color-snow: #ffffff;
+  --color-snow-always-light: #ffffff;
+  --color-snow-always-dark: #131f24;
+  --color-polar: #f7f7f7;
+  --color-swan: #e5e5e5;
+  --color-swan-always-light: #e5e5e5;
+  --color-swan-always-dark: #37464f;
+  --color-hare: #afafaf;
+  --color-hare-always-light: #afafaf;
+  --color-wolf: #777777;
+  --color-eel: #4b4b4b;
+  --color-squid: #ebe3e3;
+  --color-walking-fish: #ffdfe0;
+  --color-flamingo: #ffb2b2;
+  --color-pig: #f5a4a4;
+  --color-crab: #ff7878;
+  --color-cardinal: #ff4b4b;
+  --color-fire-ant: #ea2b2b;
+  --color-canary: #fff5d3;
+  --color-duck: #fbe56d;
+  --color-bee: #ffc800;
+  --color-bee-always-dark: #ffc700;
+  --color-lion: #ffb100;
+  --color-fox: #ff9600;
+  --color-cheetah: #ffce8e;
+  --color-monkey: #e5a259;
+  --color-camel: #e7a601;
+  --color-guinea-pig: #cd7900;
+  --color-grizzly: #bb7149;
+  --color-sea-sponge: #d7ffb8;
+  --color-turtle: #a5ed6e;
+  --color-beo: #00aaff;
+  --color-tree-frog: #3498db;
+  --color-peacock: #00cd9c;
+  --color-iguana: #ddf4ff;
+  --color-anchovy: #d2e4e8;
+  --color-beluga: #bbf2ff;
+  --color-moon-jelly: #7af0f2;
+  --color-blue-jay: #84d8ff;
+  --color-macaw: #1cb0f6;
+  --color-whale: #1899d6;
+  --color-humpback: #2b70c9;
+  --color-narwhal: #1453a3;
+  --color-manta-ray: #042c60;
+  --color-starfish: #ff86d0;
+  --color-beetle: #ce82ff;
+  --color-betta: #9069cd;
+  --color-butterfly: #6f4ea1;
+  --color-dragon: #cc348d;
+  --color-starling: #5c6cfc;
+  --color-martin: #4755df;
+  --color-grackle: #a7a0ff;
+  --color-honeycreeper: #c1bbff;
+  --color-deep-starling: #222151;
+  --color-deep-martin: #100f3e;
+  --color-legendary-foreground: #8c4103;
+  --color-stardust: #c7fffe;
+  --color-cosmos: #3c4dff;
+  --color-nebula: #3f22ec;
+  --color-nova: #cf17c8;
+  --color-gamma: #26f663;
+  --color-starlight: #268aff;
+  --color-quasar: #fc55ff;
+  --color-celestia: #ffffff;
+  --color-eclipse: #000437;
+  --color-black: #000000;
+  --color-aqua: #38eeff;
+  --color-aqua-always-light: #38eeff;
+  --color-ocean: #007c8f;
+  --color-seafoam: #9ee0e9;
+  --color-ice: #e1fdff;
+  --color-max-shadow: #14d0e1;
+  --color-diamond-stat: #56dbe2;
+  --color-mask-green: #89e219;
+  --color-pearl-stat: #ffaaee;
+  --color-snow-dark-swan: #ffffff;
+  --color-black-text: #3c3c3c;
+  --color-blue-space: #0b3e71;
+  --color-juicy-blue-space: #0a4a82;
+  --color-juicy-blue-space-light: #235390;
+  --color-gold: #faa919;
+  --color-gray-text: #999999;
+  --color-orange: #ff9d00;
+  --color-diamond-highlight: #e7fbfb;
+  --color-diamond: #38d0d0;
+  --color-banana: #ffb020;
+  --color-cloud: #cfcfcf;
+  --color-cloud-light: #dddddd;
+  --color-cloud-lightest: #f0f0f0;
+  --color-kiwi: #7ac70c;
+  --color-kiwi-dark: #5d9709;
+  --color-kiwi-light: #8ee000;
+  --color-facebook: #3b5998;
+  --color-facebook-dark: #2d4373;
+  --color-google: #4285f4;
+  --color-twitter: #1da1f2;
+  --color-hv-light-peach: #f1dab3;
+  --color-hv-peach: #dbba83;
+  --color-hv-light-orange: #ffb140;
+  --color-hv-orange: #cc7900;
+  --color-hv-brown: #8c5a11;
+  --color-streak-panel-extended-background: #ff9600;
+  --color-streak-panel-frozen-background: #ddf4ff;
+  --color-streak-panel-frozen-flair-background: #84d8ff;
+  --color-streak-panel-frozen-subtitle: #1cb0f6;
+  --color-streak-panel-frozen-text: #84d8ff;
+  --color-streak-panel-frozen-topbar-text: #1899d6;
+  --color-streak-panel-streak-society-background: #ffc800;
+  --color-streak-panel-streak-society-text: #cd7900;
+  --color-streak-panel-topbar-border: #000000;
+  --color-streak-panel-unextended-heading-text: #ebc37f;
+  --color-streak-panel-unextended-heading-background: #fff5d3;
+  --color-streak-panel-unextended-topbar-text: #ebc37f;
+  --color-streak-panel-milestone-gradient-start: #ff933a;
+  --color-streak-panel-milestone-gradient-end: #ffc800;
+  --color-streak-society-dark-orange: #ff9701;
+  --color-streak-society-light-orange: #ffb301;
+  --color-friends-quest-own-incomplete: #afafaf;
+  --color-friends-quest-friend-incomplete: #919191;
+  --color-black-text-always-light: #3c3c3c;
+  --color-beetle-always-light: #ce82ff;
+  --color-cardinal-always-light: #ff4b4b;
+  --color-cowbird-always-light: #ae6802;
+  --color-dragon-always-light: #cc348d;
+  --color-eel-always-light: #4b4b4b;
+  --color-fox-always-light: #ff9600;
+  --color-fire-ant-always-light: #ea2b2b;
+  --color-grizzly-lite-always-light: #dc8f47;
+  --color-grizzly-always-light: #bb7149;
+  --color-guinea-pig-always-light: #cd7900;
+  --color-iguana-always-light: #ddf4ff;
+  --color-macaw-always-light: #1cb0f6;
+  --color-beo-always-light: #00aaff;
+  --color-peacock-always-light: #00cd9c;
+  --color-polar-always-light: #f7f7f7;
+  --color-sea-sponge-always-light: #d7ffb8;
+  --color-starfish-always-light: #ff86d0;
+  --color-tree-frog-always-light: #3498db;
+  --color-turtle-always-light: #a5ed6e;
+  --color-walking-fish-always-light: #ffdfe0;
+  --color-wolf-always-light: #777777;
+  --color-cardinal-always-dark: #ee5555;
+  --color-eel-always-dark: #f1f7fb;
+  --color-hare-always-dark: #52656d;
+  --color-macaw-always-dark: #49c0f8;
+  --color-beo-always-dark: #93d333;
+  --color-polar-always-dark: #202f36;
+  --color-wolf-always-dark: #dce6ec;
+  --color-rookie: #00af85;
+  --color-explorer: #ff64bf;
+  --color-traveler: #ff9153;
+  --color-trailblazer: #9a8fe8;
+  --color-adventurer: #600cc7;
+  --color-discoverer: #6f2c39;
+  --color-daredevil: #2e538a;
+  --color-navigator: #092f77;
+  --color-champion: #ff6e35;
+  --color-daily_refresh: #0094ff;
+  --color-dark-mode-locked-path-section-text-color: #52656d;
+  --color-rookie-progress-bar: #00c696;
+  --color-explorer-progress-bar: #ff8acf;
+  --color-traveler-progress-bar: #ffa76a;
+  --color-trailblazer-progress-bar: #a99dfe;
+  --color-adventurer-progress-bar: #7a0dc7;
+  --color-discoverer-progress-bar: #833241;
+  --color-daredevil-progress-bar: #3662a5;
+  --color-navigator-progress-bar: #0c398d;
+  --color-champion-progress-bar: #ff8150;
+  --color-daily_refresh-progress-bar: #1ca0ff;
+  --color-course-complete-cta: #78dbe0;
+  --color-course-complete-cta-border: #5ec9cc;
+  --color-bea-secondary: #1899d6;
+  --color-eddy-secondary: #ea2b2b;
+  --color-gilded-secondary: #e7a601;
+  --color-lily-secondary: #a568cc;
+  --color-vikram-secondary: #a32a71;
+  --color-zari-secondary: #cc6ba6;
+  --color-oscar-secondary: #00a47d;
+  --color-falstaff-secondary: #965a3a;
+  --color-bea-radio: #147bac;
+  --color-duo-radio: #3e8f01;
+  --color-eddy-radio: #b33535;
+  --color-falstaff-radio: #834f33;
+  --color-lucy-radio: #b36900;
+  --color-lily-radio: #905bb3;
+  --color-vikram-radio: #8f2463;
+  --color-zari-radio: #b35e92;
+  --color-oscar-radio: #00906d;
+  --color-super-background-secondary: #1a1e4c;
+  --color-super-gradient-background: #0c2f71;
+  --color-super-gradient-top-halo: #0c4c46;
+  --color-super-gradient-bottom-halo: #4c1d73;
+  --color-final-level-medium: #857bf9;
+  --color-final-level-super-dark: #bddbff;
+  --color-gold-shine: #ffe700;
+  --color-legendary-gradient: #6f6de1;
+  --color-legendary-halo: #6e6bf2;
+  --color-legendary-stripe: #f6f6ff;
+  --color-legendary-dark-background: #181818;
+  --color-roseate: #df4ba2;
+  --color-rosefinch: #b41c75;
+  --color-bluebird: #0390d3;
+  --color-cotinga: #793ae3;
+  --color-sabrewing: #a570ff;
+  --color-blueberry: #1152a7;
+  --color-ether: #3c598d;
+  --color-diamond-tournament-purple: #a1a1ee;
+  --color-yir-page0: #ddf4ff;
+  --color-yir-page1: #e3ffeb;
+  --color-yir-page1-shadow: #131f24;
+  --color-yir-page3-shadow: #bbacdc;
+  --color-yir-page4-shadow: #8fdbff;
+  --color-yir-page5-shadow: #ffb750;
+
+  --shine-background-color: linear-gradient(136deg,
+      transparent 10%,
+      rgb(var(--color-gold-shine), 0.5) 10%,
+      rgb(var(--color-gold-shine), 0.5) 40%,
+      transparent 40%,
+      transparent 53%,
+      rgb(var(--color-gold-shine), 0.5) 53%,
+      rgb(var(--color-gold-shine), 0.5) 71%,
+      transparent 71%),
+    rgb(var(--color-bee));
+  --shine-foreground-color: rgb(var(--color-guinea-pig-always-light));
+  --path-unit-background-color: rgb(var(--color-bee));
+  --path-unit-border-color: rgb(var(--color-guinea-pig-always-light), 0.5);
+  --path-unit-foreground-color: var(--shine-foreground-color);
+
+  --font-feather: "DynaPuff", system-ui;
+  --font-din-round: varela, sans-serif;
+}
+
+@font-face {
+  font-family: "almalik";
+  src: url("../assets/fonts/Almalik.ttf");
+}
+
+@font-face {
+  font-family: "varela";
+  src: url(https://fonts.gstatic.com/s/varelaround/v20/w8gdH283Tvk__Lua32TysjIfp8uP.woff2) format('woff2');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+
+@font-face {
+  font-family: "feather-bold";
+  src: url("../assets/fonts/feather-bold.woff2") format("woff");
+}
+
+@font-face {
+  font-family: "din-round-bold";
+  src: url("../assets/fonts/din-next-rounded-bold.woff2") format("woff");
+}
+
+@font-face {
+  font-family: "din-round";
+  src: url("../assets/fonts/din-next-rounded-regular.woff2") format("woff");
+}
+
+@font-face {
+  font-family: 'din-round-medium';
+  src: url('../assets/fonts/DINRoundPro-Medi.ttf');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* button animation in gafizh */
+.button-div {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  font-size: 15px;
+  font-family: var(--font-din-round);
+  font-weight: bolder;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  border-radius: 16px;
+  /* background-color: rgb(var(--color-snow)); */
+  /* color: rgb(var(--color-eclipse)); */
+  /* box-shadow: 0 4px 0 rgb(var(--color-snow-always-light), 0.6); */
+  transition: box-shadow translate 0.2s ease;
+}
+
+.clicked:active {
+  box-shadow: 0 !important;
+  translate: 0 3px;
+}
+
+/* button animation in gafizh */

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./scss/landingpage.css" />
+    <link rel="stylesheet" href="./css/pokok.css" />
+    <script src="./js/landingpage.js" defer></script>
+    <script src="./js/loadanimationindex.js" defer></script>
+    <title>GaFizh</title>
+    <link rel="icon" href="./favicon.ico" />
+</head>
+
+<body>
+    <header class="landing-header">
+        <!-- //navbar in landing page -->
+        <div class="header-navbar">
+            <nav class="landing-navbar">
+                <a class="landing-header-logo">
+                    <img src="assets/images/gafizh-logo.png" alt="Logo GaFizh" style="height:calc(var(--h) + .5em)">
+                    <h1>GaFizh</h1>
+                </a>
+                <div class="get-started-btn-div">
+                    <button class="logging-get-started-button button-div clicked" onclick="getStartedButtonAnimation();"
+                        id="nav-get-started-button">
+                        <span id="nav-get-started-text" class="get-started-text"></span>
+                    </button>
+                </div>
+                <div class="select-site-language">
+                    <button class="site-language-button">
+                        <span id="site-language"> </span>
+                        <img alt=" " class="site-language-select-dropdown"
+                            src="./assets/svg/site-language-select-dropdown.svg" />
+                    </button>
+                    <div class="hover-site-language">
+                        <ul class="site-language-unordered-list">
+                            <li class="site-language-list-single">
+                                <a class="country-name-flag-language"
+                                    onclick="setIndexSiteLanguage('assets/JSON/landing-indonesia.json','indonesia')"><img
+                                        class="country-flag-language-selection"
+                                        src="./assets/svg/country-flags/id-flag.svg" />
+                                    Indonesia</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- content below navbar -->
+        <div class="header-logging">
+            <div class="left-logging-header" id="left-logging-header"></div>
+            <div class="right-logging-header">
+                <h1 id="header-text"></h1>
+                <div class="right-logging-button-section">
+                    <div class="get-started-btn-div">
+                        <button class="logging-get-started-button button-div clicked"
+                            onclick="getStartedButtonAnimation();" id="get-started-button click">
+                            <span id="get-started-text" class="get-started-text"></span>
+                        </button>
+                    </div>
+                    <div class="already-have-account-btn-div">
+                        <button class="logging-already-have-account-button button-div clicked"
+                            onclick="alreadyAccountButtonAnimation();" id="already-have-account-button">
+                            <span id="already-have-account-text"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- scrollable navbar -->
+        <div class="scrollable-navabar-div">
+            <nav class="scrollable-navbar-nav">
+                <svg class="left-arrow-svg" fill="none" viewBox="0 0 16 16" onclick="scrollNavbar('left')">
+                    <path d="M10 2L4 8L10 14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2"></path>
+                </svg>
+                <div class="countries-div">
+                    <ol class="countries-list" style="transform: translateX(0px)">
+                        <li class="available-lang"><a onclick="selectLesson(  1)" class="conuntry-one">Al-Fatihah</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson(  2)" class="conuntry-one">Al-Baqarah</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson(  3)" class="conuntry-one">Al-Imran</a></li>
+                        <li class="available-lang"><a onclick="selectLesson(  4)" class="conuntry-one">An-Nisa'</a></li>
+                        <li class="available-lang"><a onclick="selectLesson(  5)" class="conuntry-one">Al-Ma'idah</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson(  6)" class="conuntry-one">Al-An'am</a></li>
+                        <li class="available-lang"><a onclick="selectLesson(  7)" class="conuntry-one">Al-A'raf</a></li>
+                        <li class="available-lang"><a onclick="selectLesson(  8)" class="conuntry-one">Al-Anfal</a></li>
+                        <li class="available-lang"><a onclick="selectLesson(  9)" class="conuntry-one">At-Taubah</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson( 10)" class="conuntry-one">Yunus</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 11)" class="conuntry-one">Hud</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 12)" class="conuntry-one">Yusuf</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 13)" class="conuntry-one">Ar-Ra'd</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 14)" class="conuntry-one">Ibrahim</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 15)" class="conuntry-one">Al-Hijr</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 16)" class="conuntry-one">An-Nahl</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 17)" class="conuntry-one">Al-Isra'</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 18)" class="conuntry-one">Al-Kahfi</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 19)" class="conuntry-one">Maryam</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 20)" class="conuntry-one">Ta-Ha</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 21)" class="conuntry-one">Al-Anbiya'</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson( 22)" class="conuntry-one">Al-Hajj</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 23)" class="conuntry-one">Al-Mu'minun</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson( 24)" class="conuntry-one">An-Nur</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 25)" class="conuntry-one">Al-Furqan</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson( 26)" class="conuntry-one">Asy-Syu'ara'</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson( 27)" class="conuntry-one">An-Naml</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 28)" class="conuntry-one">Al-Qasas</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 29)" class="conuntry-one">Al-Ankabut</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson( 30)" class="conuntry-one">Ar-Rum</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 31)" class="conuntry-one">Luqman</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 32)" class="conuntry-one">As-Sajdah</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson( 33)" class="conuntry-one">Al-Ahzab</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 34)" class="conuntry-one">Saba'</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 35)" class="conuntry-one">Fatir</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 36)" class="conuntry-one">Yasin</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 37)" class="conuntry-one">As-Saffat</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson( 38)" class="conuntry-one">Sad</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 39)" class="conuntry-one">Az-Zumar</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 40)" class="conuntry-one">Ghafir</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 41)" class="conuntry-one">Fussilat</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 42)" class="conuntry-one">Asy-Syura</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson( 43)" class="conuntry-one">Az-Zukhruf</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson( 44)" class="conuntry-one">Ad-Dukhan</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson( 45)" class="conuntry-one">Al-Jasiyah</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson( 46)" class="conuntry-one">Al-Ahqaf</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 47)" class="conuntry-one">Muhammad</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 48)" class="conuntry-one">Al-Fath</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 49)" class="conuntry-one">Al-Hujurat</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson( 50)" class="conuntry-one">Qaf</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 51)" class="conuntry-one">Az-Zariyat</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson( 52)" class="conuntry-one">At-Tur</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 53)" class="conuntry-one">An-Najm</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 54)" class="conuntry-one">Al-Qamar</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 55)" class="conuntry-one">Ar-Rahman</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson( 56)" class="conuntry-one">Al-Waqi'ah</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson( 57)" class="conuntry-one">Al-Hadid</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 58)" class="conuntry-one">Al-Mujadilah</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson( 59)" class="conuntry-one">Al-Hashr</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 60)" class="conuntry-one">Al-Mumtahanah</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson( 61)" class="conuntry-one">As-Saff</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 62)" class="conuntry-one">Al-Jumu'ah</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson( 63)" class="conuntry-one">Al-Munafiqun</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson( 64)" class="conuntry-one">At-Taghabun</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson( 65)" class="conuntry-one">At-Talaq</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 66)" class="conuntry-one">At-Tahrim</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson( 67)" class="conuntry-one">Al-Mulk</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 68)" class="conuntry-one">Al-Qalam</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 69)" class="conuntry-one">Al-Haqqah</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson( 70)" class="conuntry-one">Al-Ma'arij</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson( 71)" class="conuntry-one">Nuh</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 72)" class="conuntry-one">Al-Jinn</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 73)" class="conuntry-one">Al-Muzzammil</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson( 74)" class="conuntry-one">Al-Muddathir</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson( 75)" class="conuntry-one">Al-Qiyamah</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson( 76)" class="conuntry-one">Al-Insan</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 77)" class="conuntry-one">Al-Mursalat</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson( 78)" class="conuntry-one">An-Naba'</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 79)" class="conuntry-one">An-Nazi'at</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson( 80)" class="conuntry-one">Abasa</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 81)" class="conuntry-one">At-Takwir</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson( 82)" class="conuntry-one">Al-Infitar</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson( 83)" class="conuntry-one">Al-Mutaffifin</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson( 84)" class="conuntry-one">Al-Insyiqaq</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson( 85)" class="conuntry-one">Al-Buruj</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 86)" class="conuntry-one">At-Tariq</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 87)" class="conuntry-one">Al-A'la</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 88)" class="conuntry-one">Al-Ghasyiyah</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson( 89)" class="conuntry-one">Al-Fajr</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 90)" class="conuntry-one">Al-Balad</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 91)" class="conuntry-one">Asy-Syams</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson( 92)" class="conuntry-one">Al-Lail</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 93)" class="conuntry-one">Adh-Dhuha</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson( 94)" class="conuntry-one">Asy-Syarh</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson( 95)" class="conuntry-one">At-Tin</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 96)" class="conuntry-one">Al-'Alaq</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 97)" class="conuntry-one">Al-Qadr</a></li>
+                        <li class="available-lang"><a onclick="selectLesson( 98)" class="conuntry-one">Al-Bayyinah</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson( 99)" class="conuntry-one">Az-Zalzalah</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson(100)" class="conuntry-one">Al-Adiyat</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson(101)" class="conuntry-one">Al-Qari'ah</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson(102)" class="conuntry-one">At-Takatsur</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson(103)" class="conuntry-one">Al-Asr</a></li>
+                        <li class="available-lang"><a onclick="selectLesson(104)" class="conuntry-one">Al-Humazah</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson(105)" class="conuntry-one">Al-Fil</a></li>
+                        <li class="available-lang"><a onclick="selectLesson(106)" class="conuntry-one">Quraisy</a></li>
+                        <li class="available-lang"><a onclick="selectLesson(107)" class="conuntry-one">Al-Ma'un</a></li>
+                        <li class="available-lang"><a onclick="selectLesson(108)" class="conuntry-one">Al-Kautsar</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson(109)" class="conuntry-one">Al-Kafirun</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson(110)" class="conuntry-one">An-Nasr</a></li>
+                        <li class="available-lang"><a onclick="selectLesson(111)" class="conuntry-one">Al-Lahab</a></li>
+                        <li class="available-lang"><a onclick="selectLesson(112)" class="conuntry-one">Al-Ikhlas</a>
+                        </li>
+                        <li class="available-lang"><a onclick="selectLesson(113)" class="conuntry-one">Al-Falaq</a></li>
+                        <li class="available-lang"><a onclick="selectLesson(114)" class="conuntry-one">An-Nas</a></li>
+                    </ol>
+                </div>
+                <svg class="right-arrow-svg" fill="none" viewBox="0 0 16 16" onclick="scrollNavbar('right')">
+                    <path d="M6 2L12 8L6 14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2"></path>
+                </svg>
+            </nav>
+        </div>
+
+        <script>
+            const countriesList = document.querySelector(".countries-list");
+            const itemsToShow = 7;
+            const itemsToScroll = 2;
+            let currentIndex = 0;
+
+            function scrollNavbar(direction) {
+                const itemWidth = countriesList.firstElementChild.offsetWidth + 10; // 10 is the gap between items
+
+                if (direction === "left" && currentIndex > 0) {
+                    currentIndex -= itemsToScroll;
+                } else if (
+                    direction === "right" &&
+                    currentIndex < countriesList.children.length - itemsToShow
+                ) {
+                    currentIndex += itemsToScroll;
+                }
+
+                countriesList.style.transform = `translateX(-${currentIndex * itemWidth
+                    }px)`;
+            }
+        </script>
+    </header>
+    <!-- section below scrollable navbar -->
+    <section class="gafizh-features">
+        <section class="feature-class features-column">
+            <div class="gafizh-features-text">
+                <h2 class="gafizh-features-text-head" id="feature-head-1"></h2>
+                <p class="gafizh-features-text-body">
+                    <span id="feature-body-1"></span>
+                </p>
+            </div>
+            <div id="gafizh-feature-animation-free-fun-effective" class="gafizh-feature-animation"></div>
+        </section>
+
+        <section class="feature-class features-column-reverse">
+            <div id="gafizh-feature-animation-backed-by-science" class="gafizh-feature-animation"></div>
+            <div class="gafizh-features-text">
+                <h2 class="gafizh-features-text-head" id="feature-head-2"></h2>
+                <p class="gafizh-features-text-body">
+                    <span id="feature-body-2"></span>
+                </p>
+            </div>
+        </section>
+        <section class="feature-class features-column">
+            <div class="gafizh-features-text">
+                <h2 class="gafizh-features-text-head" id="feature-head-3"></h2>
+                <p class="gafizh-features-text-body">
+                    <span id="feature-body-3"></span>
+                </p>
+            </div>
+            <div id="gafizh-feature-animation-stay-motivated" class="gafizh-feature-animation"></div>
+        </section>
+        <section class="feature-class features-column-reverse">
+            <div id="gafizh-feature-animation-personalised-learning" class="gafizh-feature-animation"></div>
+            <div class="gafizh-features-text">
+                <h2 class="gafizh-features-text-head" id="feature-head-4"></h2>
+                <p class="gafizh-features-text-body">
+                    <span id="feature-body-4"></span>
+                </p>
+            </div>
+        </section>
+    </section>
+    <!-- landing page floating with get statrted button -->
+    <section class="floating-landing-page">
+        <div class="floating-footer">
+            <div class="footer-get-started-section">
+                <h1 class="footer-get-started-heading" id="float-heading"></h1>
+                <div class="floating-get-started-button">
+                    <div class="get-started-btn-div">
+                        <button class="logging-get-started-button button-div clicked"
+                            onclick="getStartedButtonAnimation();" id="get-started-button">
+                            <span id="bottom-get-started-text"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="floating-animation">
+                <div id="phone-animation"></div>
+            </div>
+        </div>
+    </section>
+    <div class="lastDiv">
+        <div class="divInLastDiv">
+            <div class="containList">
+                <div class="list-head">
+                    <div class="headings">
+                        <div>
+                            <div class="mainHeading" id="aboutUs">Tentang kami</div>
+                            <ul>
+                                <li><a href="tahfizh">Tahfizh</a></li>
+                                <li><a href="info">Misi</a></li>
+                                <li><a href="approach">Pendekatan</a></li>
+                                <li><a href="effifacy">Efikasi</a></li>
+                                <li><a href="about">Tim pengembang</a></li>
+                                <li>
+                                    <a href="https://research.gafizh.com">Riset</a>
+                                </li>
+                                <li>
+                                    <a href="https://careers.gafizh.com">Karier</a>
+                                </li>
+                                <li>
+                                    <a href="https://design.gafizh.com">Pedoman merek</a>
+                                </li>
+                                <li>
+                                    <a href="https://store.gafizh.com/">Toko</a>
+                                </li>
+                                <li>
+                                    <a href="https://press.gafizh.com">Pers</a>
+                                </li>
+                                <li>
+                                    <a href="https://investors.gafizh.com">Investor</a>
+                                </li>
+                                <li><a href="contact">Hubungi kami</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="headings">
+                        <div>
+                            <div class="mainHeading">Produk</div>
+                            <ul>
+                                <li>
+                                    <a class="" href="">GaFizh</a>
+                                </li>
+                                <li>
+                                    <a href="https://schools.gafizh.com">GaFizh untuk Sekolah</a>
+                                </li>
+                                <li>
+                                    <a href="https://podcast.gafizh.com">Podcast</a>
+                                </li>
+                                <li><a href="">GaFizh Hero</a></li>
+                                <li><a href="">Hadiahkan GaFizh Hero</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="headings">
+                        <div>
+                            <div class="mainHeading">Aplikasi</div>
+                            <ul>
+                                <li><a href="">GaFizh untuk Android</a></li>
+                                <li><a href="">GaFizh untuk iOS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="headings">
+                        <div>
+                            <div class="mainHeading">Bantuan dan dukungan</div>
+                            <ul>
+                                <li>
+                                    <a href="https://support.gafizh.com/">T&J GaFizh</a>
+                                </li>
+                                <li>
+                                    <a href="https://status.gafizh.com/">Status</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="headings">
+                        <div>
+                            <div class="mainHeading">Privasi dan ketentuan</div>
+                            <ul>
+                                <li><a href="">Panduan komunitas</a></li>
+                                <li><a href="">Ketentuan</a></li>
+                                <li><a href="">Privasi</a></li>
+                            </ul>
+                        </div>
+                        <div class="headings"></div>
+                        <div>
+                            <div class="mainHeading">Media Sosial</div>
+                            <ul>
+                                <li>
+                                    <a href="https://blog.gafizh.com">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/gafizh">Instagram</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/gafizh">Facebook</a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/gafizh">Twitter</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/user/gafizh">YouTube</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="languageRow">
+                <div>
+                    <div class="languageHeading">Bahasa laman web:</div>
+                    <ul>
+                        <li class="languages">
+                            <a onclick="setIndexSiteLanguage('assets/JSON/landing-indonesia.json','indonesia')"
+                                class="singleLang">Indonesia</a>
+                        </li>
+                    </ul>
+                </div>
+                <img class="beoFace" src="assets/images/gafizh-logo-2.png" />
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/pointerpage.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.7/lottie.min.js"></script>
+
+</html>

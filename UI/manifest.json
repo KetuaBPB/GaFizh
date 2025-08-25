@@ -1,0 +1,20 @@
+{
+    "short_name": "GaFizh",
+    "name": "GaFizh",
+    "icons": [
+        {
+            "src": "",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": "/?utm_source=pwa_launch",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "scope": "/"
+}
